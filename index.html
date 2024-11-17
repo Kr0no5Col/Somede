@@ -31,10 +31,16 @@ img.btn-whatsapp {
 display: block !important;
 position: fixed;
 z-index: 9999999;
-bottom: 60px;
-right: 130px;
+bottom: 30px;
+right: -10px;
 cursor: pointer;
-border-radius:850px !important;
+}
+
+@media (max-width: 768px) {
+  img.btn-whatsapp {
+    width: 100px; /* Smaller width for mobile */
+    height: 100px; /* Smaller height for mobile */
+  }
 }
 
 img.btn-whatsapp:hover {  
@@ -52,10 +58,14 @@ display: block !important;
 position: fixed;
 z-index: 9999999;
 bottom: 190px;
-right: 100px;
+right: 10px;
 
 }
-
+@media (max-width: 768px) {
+  img.chat_lauri {
+    display: none !important; 
+  }
+}
 
 /******************          fin           **********************/
 </style>
@@ -134,7 +144,7 @@ right: 100px;
             <div class="row">
                 <!-- Cards content here... -->
                   <!-- Card 1 -->
-                  <div class="col-12 col-sm-6 col-md-4">
+                  <div class="col-12 col-md-4 mb-4">
                     <div class="media services-wrap wow">
                     
                         <div class="media-body">
@@ -150,25 +160,30 @@ right: 100px;
                     </div>
                 </div>
                  <!-- Card 2 -->
-                 <div class="col-12 col-sm-6 col-md-4" >
+                 <div class="col-12 col-md-4 mb-4">
                     <div class="media services-wrap wow">
-                        
                         <div class="media-body">
                             <h3 class="media-heading">
                                 Nuestros servicios
                             </h3>
-                            <p>Examenes Ocupacionales</p>
-                             <p>Esperometria</p>
-                              <p>Visiometrias</p>
-                               <p>Audiometrias</p>
-                             <p>Examenes de laboratorio</p>
-                              <p>Capacitacion y Actividades </p>
+                            <div class="justify-content-center">
+                                <P>
+                            Examenes Ocupacionales<br>
+                            Esperometria<br>
+                            Visiometrias<br>
+                            Audiometrias<br>
+                            Examenes de laboratorio<br>
+                            Capacitacion y Actividades 
+                                </P>
+
+                            </div>
+                            
                             <a class="btn btn-info" role="button" href="#">Ver mas</a>
                         </div>
                     </div>
                 </div>
                  <!-- Card 3 -->
-                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                 <div class="col-12 col-md-4 mb-4">
                     <div class="media services-wrap wow fadeInDown">
                                             
                                             <div class="media-body">

@@ -145,6 +145,11 @@ body > section {
   margin-left: 15px;
 }
 
+.media-body p {
+  line-height: 1.9; 
+}
+
+
 .color-media {
   background-color: #88b99f;
 }
@@ -768,14 +773,20 @@ input.search-form:hover {
     left: 0;
     width: 100%;
     z-index: 2;
+
+    
   }
 
+  
+  
+
   .services-wrap {
-    width: 90%; /* Stack cards vertically on small screens */
+    width: 90%; 
     margin-bottom: 20px;
     margin-left: auto; /* Center the card horizontally */
     margin-right: auto; /* Center the card horizontally */
     z-index: 2;
+    padding: 20px;
   }
   .row {
     display: flex;
@@ -810,11 +821,11 @@ input.search-form:hover {
   margin-right: 20px;
 }
 /* General rule to center the image */
-.Map.images {
+.Map-images {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; /* Make sure the image scales properly */
+  width: 100%; /* Make sure the image scales properly */
   max-width: 842px; /* Prevents it from exceeding its original size */
   height: auto; /* Maintains aspect ratio */
 }
